@@ -1837,7 +1837,7 @@ html, body {
   width: -webkit-calc(100% + 30px);
   width: calc(100% + 30px); }
   .map iframe {
-    height: 70vh;
+    height: 80vh;
     position: relative;
     width: 100%; }
 
@@ -1972,6 +1972,12 @@ html, body {
     line-height: 1.15;
     margin: 0 0 2rem 0;
     text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.15); }
+    @media (max-height: 600) {
+      .header__title {
+        font-size: 1.75rem; } }
+    @media (max-width: 768) {
+      .header__title {
+        font-size: 2rem; } }
   .header__subtitle {
     font-size: 1.25rem;
     font-weight: 700;
@@ -2098,7 +2104,7 @@ html, body {
     display: inline-block; }
 
 #localizacao .section__content {
-  height: 70vh; }
+  height: 80vh; }
 
 .footer {
   padding: 1.5rem 0; }

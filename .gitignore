@@ -1,0 +1,8 @@
+dist/
+node_modules/
+node_modules/*
+bower_components/
+.vscode/
+
+.DS_Store
+package-lock.json
