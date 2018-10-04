@@ -2118,7 +2118,22 @@ html, body {
     color: #ffffff !important;
     text-align: center !important; }
   .section--blue .btn {
-    display: inline-block; }
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    color: #4897f3;
+    line-height: 1;
+    margin: auto;
+    max-width: 200px;
+    padding: 10px 25px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .section--blue .btn:hover {
+      background-color: #ffffff;
+      color: #4897f3 !important;
+      text-decoration: none; }
 
 .footer {
   padding: 1.5rem 0;
