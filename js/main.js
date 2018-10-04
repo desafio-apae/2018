@@ -10601,15 +10601,15 @@ $(document).ready(function () {
   smoothScroll();
 
   // get scroll and change navbar
-  // $(window).scroll(function (event) {
-  //   var scroll = $(window).scrollTop();
+  $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
 
-  //   if (scroll > 200) {
-  //     $(".navbar").addClass("small");
-  //   } else {
-  //     $(".navbar").removeClass("small");
-  //   }
-  // });
+    if (scroll > 200) {
+      $(".navbar").addClass("navbar--smaller");
+    } else {
+      $(".navbar").removeClass("navbar--smaller");
+    }
+  });
 
   // form validation and submition
   // phone validation
@@ -10668,8 +10668,8 @@ function validateEmail(mail) {
   }
 }
 
+// Smooth Scroll
 function smoothScroll() {
-  // smooth scroll
   // Select all links with hashes
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
